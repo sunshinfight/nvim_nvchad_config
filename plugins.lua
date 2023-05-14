@@ -71,6 +71,7 @@ local plugins = {
   { import = "custom.configs.extras.copilot" },
   { import = "custom.configs.extras.trouble" },
   -- { import = "custom.configs.extras.diffview" }
+  { import = "custom.configs.extras.mason-extras" },
 }
 
 return plugins
