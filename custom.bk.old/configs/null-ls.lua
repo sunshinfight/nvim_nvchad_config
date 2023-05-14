@@ -19,7 +19,9 @@ local sources = {
   b.formatting.clang_format,
 
   -- python
-  b.formatting.autopep8,
+  -- b.formatting.black.with { extra_args = { "--fast" } },
+  -- b.formatting.isort,
+  b.formatting.autopep8
 }
 
 null_ls.setup {

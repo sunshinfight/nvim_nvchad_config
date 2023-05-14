@@ -47,16 +47,20 @@ local plugins = {
     end,
   },
 
-  -- {
-  --   "williamboman/mason-lspconfig.nvim",
-  --   enabled = true,
-  -- },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    enabled = true,
+  },
 
   -- To make a plugin not be loaded
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
-  -- },
+  {
+    "NvChad/nvim-colorizer.lua",
+  },
+
+  {
+    "github/copilot.vim",
+    lazy = false,
+  }
 
   -- All NvChad plugins are lazy-loaded by default
   -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
@@ -65,12 +69,6 @@ local plugins = {
   --   "mg979/vim-visual-multi",
   --   lazy = false,
   -- }
-
-  -- To use a extras plugin
-  { import = "custom.configs.extras.symbols-outline" },
-  { import = "custom.configs.extras.copilot" },
-  { import = "custom.configs.extras.trouble" },
-  -- { import = "custom.configs.extras.diffview" }
 }
 
 return plugins
